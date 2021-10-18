@@ -1,0 +1,66 @@
+.cestovka__sluzby {
+    margin-top: 0.5rem;
+    display: flex;
+    background-color: var(--text-barva);
+    padding: 1.5rem;
+}
+
+.cestovka h4 {
+    margin: 0;
+    color: var(--hlavni-barva);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.cestovka__sluzby--popis {
+    margin-left: 1.4rem;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cestovka__sluzby--popis1 {
+    margin-left: 2rem;
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 500px) {
+    
+    .cestovka {
+        display: grid;
+        gap: 1.4rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+
+    .cestovka__sluzby--popis {
+            margin-left: 0;
+        }
+
+    .cestovka__sluzby {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cestovka h4 {
+        margin: auto;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 960px) {
+     
+    .cestovka__sluzby img {
+        margin-bottom: 0.9rem;
+    }
+    
+    .cestovka {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    }
+    
+   
+}

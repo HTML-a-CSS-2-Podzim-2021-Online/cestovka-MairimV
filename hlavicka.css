@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    flex-direction: column;
+    grid-column: auto;
+}
+
+.h__nazev {
+    min-width: 250px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 900px;
+    margin: 20px 0;
+    color: var(--hlavni-barva);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav {
+    display: block;
+    align-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    max-width: 600px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 10px 0 10px;
+    color: var(--hlavni-barva);
+}
+
+nav li:hover, nav li:focus {
+    background-color: var(--hlavni-barva);
+    color: white;
+}
+
+
+/* pc */
+
+@media (min-width: 700px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav {
+        width: 450px;
+    }
+    nav li {
+        font-size: 20px;
+    }
+}

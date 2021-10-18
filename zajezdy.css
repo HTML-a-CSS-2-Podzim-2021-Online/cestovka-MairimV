@@ -1,0 +1,108 @@
+.zajezdy__1 {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(podklady/palmy.jpg);
+    background-position: bottom;
+    min-height: 220px;
+}
+
+.zajezdy__2 {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(podklady/jezero.jpg);
+}
+
+.zajezdy__3 {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(podklady/nakole.jpg);
+}
+
+.zajezdy__2,
+.zajezdy__3 {
+    background-position: center;
+    min-height: 150px;
+}
+
+.zajezdy__1,
+.zajezdy__2,
+.zajezdy__3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 1.1rem 0;
+    width: auto;
+}
+
+.zajezdy__1 h1 {
+    bottom: 1.8rem;
+}
+
+.zajezdy__popis {
+    bottom: 0.4rem;
+}
+
+h3 {
+    bottom: 1.2rem;
+}
+
+.zajezdy__1 h1, 
+.zajezdy__popis, 
+h3 {
+    left: 1rem;
+    position: absolute;
+}
+
+.zajezdy {
+    margin-bottom: 2.4rem;
+}
+
+.zajezdy__popis {
+    color: var(--text-barva);
+    font-size: 1rem;
+}
+
+/* tablet */
+@media screen and (min-width: 500px) {
+    
+    .zajezdy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,185px);
+        gap: 1.3rem;
+    }
+
+    .zajezdy__1 {
+        grid-column: 1/-1;
+        grid-row: 1/-2;
+    }
+
+    .zajezdy__1,
+    .zajezdy__2,
+    .zajezdy__3 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .zajezdy__popis {
+        color: var(--text-barva);
+        font-size: 1rem;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 960px) {
+    
+    .zajezdy {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 185px);
+    }
+    .zajezdy__1 {
+        grid-row: 1/-1;
+        grid-column: 1/-2;
+    }
+
+    .zajezdy__2 {
+        grid-column: 3;
+        grid-row:1;
+    }
+
+    .zajezdy__3 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+}

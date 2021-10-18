@@ -1,0 +1,42 @@
+.novinky h4 {
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-top: 0.6rem;
+    color: var(--hlavni-barva);  
+}
+
+.novinky p {
+    font-weight: 500;
+}
+
+.novinky__odstavec {
+    background-color:var(--text-barva);
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.datum {
+    color:var(--date-barva); 
+}
+
+/* tablet */
+@media screen and (min-width: 500px) {
+ 
+    .datum, 
+    .novinky h4, 
+    .novinky__odstavec {
+        font-size: 1rem;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 960px) {
+    
+    .novinky__seznam {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1;
+        gap: 1.4rem;
+    }
+}
